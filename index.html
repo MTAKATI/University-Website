@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Designs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Course.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>World's biggest University</h1>
+            <p>Making a website is now the easiest thing in the world. You just need to learn HTML, CSS, <br>Javascript and you are good to go.</p>
+            <a href="" class="hero-btn">Visit Us To know More</a>
+        </div>
+    </section>
+
+    <!------ Course ----->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Get the indemand courses that will get you a job within 9 months</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>After the basics, become an intermediate by doing some projects</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>After the basics, become an intermediate by doing some projects</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>After the basics, become an intermediate by doing some projects</p>
+            </div>
+        </div>
+    </section>
+
+    <!----- Cmapus ------>
+
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Get the best training to prepare you for a job or starting a business</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="Images/london.png">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="Images/newyork.png">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="Images/washington.png">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----- Facilities ------>
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Best facilities you can find.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="Images/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>Largest study area</p>
+            </div>
+            <div class="facilities-col">
+                <img src="Images/cafeteria.png" alt="">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Caffeteria</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!------- testimonials ------>
+    <section class="testimonials">
+        <h1>What Our Students Says</h1>
+        <p>Best facilities you can find.</p>
+
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="Images/user1.jpg" alt="">
+                <div>
+                    The best ever.... 
+                    <h3>Michel</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="Images/user2.jpg" alt="">
+                <div>
+                    The best ever.... 
+                    <h3>Arthur Mtakati</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star--half-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----- Call To Action --------->
+    <section class="cta">
+        <h1>Enroll For Our Various Online Courses Anywhere <br> From The World</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+
+    <!------ Footer ---->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Details about me (footer)</p>
+        <div class="icons">
+            <i class="fa fa-facebook" ></i>
+            <i class="fa fa-twitter" ></i>
+            <i class="fa fa-instagram" ></i>
+            <i class="fa fa-linkedin" ></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </section>
+        
+<!-----JavaScript for Toggle Menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
